@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.container{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 70%;
+    height: 80vh;
+    position: relative;
+    background:url(https://wallpapers.com/images/file/4k-hulk-neon-green-xokijypnnpb09e9e.jpg) center/cover no-repeat ;
+    transition:background 1s ease-in-out;
+    box-shadow: 10px 10px 35px rgba(0,0,0,0.6);
+}
+.btn-left{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    border: none;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-right{
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    border: none;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
