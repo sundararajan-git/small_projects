@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-family: 'Poppins', sans-serif;
+text-transform: capitalize;
+}
+body{
+    background-color: cornsilk;
+}
+.box{
+    border: 6px solid rgb(255, 183, 0);
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;   
+}
+.box1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.box2{
+    position: absolute;
+    top: 40%;
+    left: 1%;
+}
+.box3{
+    position: absolute;
+    top: 60%;
+    left: 14%;
+}
+.box4{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+}
+.box5{
+    position: absolute;
+    top: 25%;
+    left: 80%;
+}
+.box6{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
+.box7{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+.box8{
+    position: absolute;
+    top: 99%;
+    left: 50%;
+}
+.box9{
+    position: absolute;
+    top: 90%;
+    left: 4%;
+}
+.box10{
+    position: absolute;
+    top: 56%;
+    left: 90%;
+}
+.box{
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.cover_page{
+    box-shadow: 1px 1px 7px 7px gray;
+    border-radius: 10px;
+    width: 55%;
+    height: auto;
+    display: flex;
+    z-index: 99;
+}
+.cover_page:hover{
+    box-shadow: 1px 1px 7px 7px orange;
+}
+.one{
+    padding: 1%;
+    width: 200%;
+    background-color: white; 
+    border-radius: 10px;
+}
+.one i{
+    padding: 6%;
+    color: goldenrod;
+    font-weight: bolder;
+    font-size: 150%;
+}
+.one p:nth-child(2){
+    color: goldenrod;
+    font-weight: bolder;
+    font-size: 200%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.one p{
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 5%;
+}
+.one span{
+    font-weight: bolder;
+    font-size: 200%;
+    margin-left: 5%;
+}
+.one button{
+    margin-bottom: 8%;
+    margin-left: 7%;
+    width: 80%;
+    height: 8%;
+    background-color: rgb(255, 183, 0);
+    color:black;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 150%;
+    cursor: pointer;
+}
+.one button:hover{
+    background-color: black;
+    color: white;
+}
+.two img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+@media all and (max-width:1025px){
+    .cover_page{
+        width: 60%;
+    }
+    body{
+        font-size: 90%;
+    }
+    .one p:nth-child(2){
+        margin-top: 30%;
+    }
+}
+@media all and (max-width:900px){
+    .cover_page{
+        width: 70%;
+    }
+    body{
+        font-size: 90%;
+    }
+}
+@media all and (max-width:801px){
+    .cover_page{
+        width: 85%;
+    }
+    body{
+        font-size: 90%;
+    }
+    .one p:nth-child(2){
+        margin-top: 25%;
+    }
+   
+}
+@media all and (max-width:670px){
+    .cover_page{
+        width: 90%;
+    }
+    body{
+        font-size: 90%;
+    }
+  
+}
+@media all and (max-width:600px){
+    .cover_page{
+        flex-direction: column;
+        box-shadow: 1px 1px 7px 7px gray;
+        height: auto;
+        margin-top: 20%;
+    }
+    .one{
+        order: 2;
+        border-top-right-radius: 0px;
+        width: 80%;
+        padding: 10%;
+    }
+    .two img{
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+    .one p:nth-child(2){
+        margin-top: 5%;
+    }
+}
+@media all and (max-width:350px){
+    .one span{
+        font-size: 180%;
+    }
+}

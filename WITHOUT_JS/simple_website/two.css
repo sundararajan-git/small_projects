@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Genos', sans-serif;
+  scroll-behavior: smooth;
+}
+header{
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content:space-between;
+  font-size: 20px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+.logo{
+  margin-left: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.logo:hover{
+  color: red;
+}
+a{
+  color: white;
+}
+li:hover > a{
+  color: red;
+}
+nav ul{
+  display: flex;
+  gap: 30px;
+  margin-right: 70px;
+  font-weight: bold;
+}
+nav ul li{
+  padding: 15px;
+}
+#two{
+  position: absolute;
+  top: 50px;
+  display: block;
+  background-color:black;
+  padding-top: 10px;
+}
+nav ul ul li{
+  padding: 10px;
+  display: none;
+}
+#one:hover > #two li{
+  background-color:black;
+  display: block;
+}
+.icon{
+  position: absolute;
+  right: 20px;
+  display: none;
+  font-size: 23px;
+  cursor: pointer;
+}
+#bar{
+  display: none;
+}
+.home{
+  background-color: cadetblue;
+  height: 100vh;
+}
+.circle{
+  background-color: black;
+  width: 30vw;
+  height: 60vh;
+  border-radius: 50%;
+  position: relative;
+  left: 60%;
+  top: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle:hover{
+  box-shadow: 0px 0px 7px 7px red ;
+}
+.circle span{
+  position: relative;
+  color: red;
+  font-weight: bolder;
+  font-size: 90px;
+  transform: rotate(-30deg);
+}
+.home p{
+  position: absolute;
+  font-size: 105%;
+  font-weight: 400;
+  top: 38%;
+  left: 20px;
+  width: 50%;
+  text-align: justify;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.about{
+  padding: 100px;
+  background-color: antiquewhite;
+}
+.about h1{
+  text-align: center;
+  font-size: 310%;
+  font-weight: bolder;
+}
+.about p{
+  text-align: justify;
+}
+.contact{
+  background-color: aquamarine;
+  text-align: center;
+  padding: 100px;
+}
+.contact h1,.help h1{
+  font-size: 310%;
+}
+.contact p , .help p{
+  text-align: justify;
+}
+.help{
+  background-color: coral;
+  text-align: center;
+  padding: 100px;
+}
+.help footer{
+  font-weight: bold;
+}
+@media all and (max-width:750px){
+  nav ul li{
+    padding: 10px;
+  }
+  nav ul{
+    margin-right: 30px;   
+  }
+  .logo{
+    margin-left: 10px;
+  }
+  .home p{
+    top: 30%;
+  }
+  .circle{
+    top: 20%;
+    left: 65%;
+    height: 40vh;
+  }
+  .circle span{
+    font-size: 60px;
+  }
+  .home , .about , .help ,.contact{
+    padding: 50px;
+  }
+}
+@media all and (max-width:600px){
+  nav ul{
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 70px;
+    left: 0;
+    background-color: black;
+    display: none;
+  }
+  nav ul li{
+    padding: 15px;
+  }
+  .icon{
+    display: block;
+  }
+  #bar:checked + nav ul{
+    display: block;
+  }
+  #two{
+    top: 240px;
+    left: 58%;
+    width: 40%;
+  }
+  li:hover > a{
+    font-size: 25px;
+  }
+  .home p{
+    width: 90%;
+    left: 10px;
+    border: none;
+    font-size: 100%;
+  }
+  .circle{
+    display: none;
+  }
+  .home , .about , .help ,.contact{
+    padding: 20px;
+  }
+}
+@media all and (max-width:260px){
+  .home p{
+    font-size: 90%;
+  }
+}

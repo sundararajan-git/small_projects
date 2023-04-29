@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.header ul{
+    padding-top: 20PX;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+.header ul li img{
+    width: 40px;
+    cursor: pointer;
+}
+#two{
+    padding-right: 20px;
+    background-color: white;
+}
+.header ul li a:hover{
+    text-decoration: underline;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image img{
+    width: 30%;
+}
+.search_bar{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+.search_bar input{
+    padding-left: 10px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.search_bar img{
+    width: 40px;
+    padding-right: 20px;
+}
+.search_bar:hover{
+    box-shadow: 0px 0px 7px 7px rgb(184, 183, 183);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+.buttons button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+}
+.buttons button:hover{
+    border: 1px solid black;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    align-content:space-between;
+    padding: 10px;
+    border-top: 1px solid gray;
+    width: 98%;
+}
+footer ul{
+    display: flex;
+    gap: 20px;
+}
+footer ul li:hover{
+    text-decoration: underline;
+}
+@media all and (max-width:800px){
+    .buttons button{
+        width: 100px;
+        font-size: 12px;
+    }
+    .search_bar{
+        width: 50%;
+    }
+}
+@media all and (max-width:580px){
+    footer{
+        font-size: 70%;
+    }
+    .search_bar{
+        width:60%;
+    }
+}
+@media all and (max-width:500px){
+    .buttons button{
+        width: 80px;
+        font-size: 10px;
+    }
+    footer{
+        font-size: 50%;
+    }
+    .search_bar img{
+        width: 30px;
+    }
+    .header ul li img{
+        width: 30px;
+    }
+}
+@media all and (max-width:350px){
+    footer{
+        font-size: 30%;
+    }
+   .search_bar{
+    width: 75%;
+   }
+   .header ul{
+    font-size: 13px;
+   }
+   .header ul li img{
+    width: 20px;
+   }
+}

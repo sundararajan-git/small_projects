@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/survey_form/survey form.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <div class="border">
+        </div>
+    <div id="one">
+    <h1>Survey Form</h1>
+    <div class="enter-input">
+        <label for="name">Name</label><br>
+        <input type="text" placeholder="   Enter your name"><br><br>
+        <label for="email">Email</label><br>
+        <input type="text" placeholder="   Enter your email"><br><br>
+        <label for="age">Age</label><br>
+        <input type="text" placeholder="   Enter your age"><br><br>
+        <label for="option">Which option best describes you?</label><br>
+        <select name="select" id="option">
+            <option value="student">&nbsp; &nbsp;student</option>
+            <option value="professional">&nbsp; &nbsp;professional</option>
+            <option value="freelancer">&nbsp; &nbsp;freelancer</option>
+            <option value="others">&nbsp; &nbsp;others</option>
+        </select>
+    </div><br>
+    <div class="select">
+        <label for="radio1">Would you recommend this website
+            to a friend?</label><br><br>
+        <label for="radio1">
+            <input type="radio" name="yes" id="radio1"> Yes
+        </label><br>
+        <label for="radio2">
+            <input type="radio" name="yes" id="radio2"> No
+        </label><br>
+        <label for="radio3">
+            <input type="radio" name="yes" id="radio3"> Maybe
+        </label>
+    </div><br>
+    <div class="checkbox">
+        <label for="">Anguages and Frameworks known<small>  (Check all that apply)</small></label><br><br>
+        <label for="inp-1">
+            <input type="checkbox" name="c" id="inp-1"> C
+        </label><br>
+        <label for="inp-2">
+            <input type="checkbox" name="c++" id="inp-2"> C++
+        </label><br>
+        <label for="inp-3">
+            <input type="checkbox" name="c#" id="inp-3"> C#
+        </label><br>
+        <label for="inp-4">
+            <input type="checkbox" name="python" id="inp-4"> Python
+        </label><br>
+        <label for="inp-5">
+            <input type="checkbox" name="java" id="inp-5"> Java
+        </label><br>
+        <label for="inp-6">
+            <input type="checkbox" name="ruby" id="inp-6"> Ruby
+        </label><br>
+        <label for="inp-7">
+            <input type="checkbox" name="javascript" id="inp-7"> Javascript
+        </label><br><br>
+        <label for="com">Any comments or suggestions</label><br><br>
+    <textarea name="comment" id="com" rows="5"></textarea><br><br><br>
+    <button type="submit" value="submit">submit</button>
+    </div>
+</div>
+</div>
+</body>
+</html>
